@@ -1,0 +1,13 @@
+<configuration>
+    <!-- In log ra console, định dạng thời gian - mức độ - logger - thông điệp -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Đặt mức log mặc định là INFO (có thể đổi thành DEBUG nếu cần) -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
